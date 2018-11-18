@@ -3,6 +3,7 @@
 }
 body{
     margin: 0;
+    padding: 0;
     font-family: Helvetica;
 }
 .grid{
@@ -131,9 +132,6 @@ figure{
     background-color: #fff;
     
 }
-.card1{
-    margin: 10px;
-}
 .main-content{
     display: flex;
     flex-wrap: wrap;
@@ -227,9 +225,7 @@ textarea{
     background-repeat: no-repeat;
     background-size: cover;
 }
-fieldset{
-    outline: none;
-}
+
 .content{
     padding: 30px;
 }
@@ -243,46 +239,6 @@ button{
     border-radius: 2px;
     padding: 5px;
 }
-
-.portfolio{
-    grid-area: main;
-    background-color: #fff;
-    
-}
-.card{
-    margin: 10px;
-}
-.main-content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
-
-/* .header2{
-    height: 40px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-left: 18%;
-    margin-right: 18%;
-}
-.image{
-    height: 500px;
-    background-image: url('images/contact.jpg');
-    background-origin:center;
-    background-repeat: no-repeat; 
-} */
-
 .pf{
     padding: 10px;
 }
@@ -296,9 +252,7 @@ button{
         width: 100%;
         margin-left: 10px;
     }
-    footer{
-        font-size: 12px;
-    }
+   
     
 footer{
     font-size: 12px;
@@ -309,12 +263,12 @@ footer{
 button{
     width: 40%;
 }
-.grid{
+/* .grid{
     grid-template-rows: 300px 1fr 200px;
    
-}
+} */
 
-#bars{           
+/* #bars{           
 display: block;
 position: absolute;
 height: 48px;
@@ -336,5 +290,5 @@ top: 0;
 left: 0;
 color: rgb(255,255,255);
 z-index: 4;
-}
+} */
 }
