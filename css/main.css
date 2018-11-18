@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/background.png');
+    }
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "first third";                    
+}
+.first{
+    grid-area: first;
+    display: flex;
+    flex-direction: column;
+}
+.first div{
+    margin: 50px;
+}
+
+.third{
+    grid-area: third;
+    align-items: center;
+}
+.third div{
+    margin-top: 40%;
+    margin-right: 10%;
+}
+h1{
+    text-align: right;
+    font-size: 60px;
+    color: #fff;
+}
+p{
+    color: #fff;
+    text-align: center;
+}
+.second{
+    display: none;
+}
+@keyframes kenburns {
+0% {
+opacity: 0;
+}
+5% {
+opacity: 1;
+}
+95% {
+transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+/* animation-timing-function: ease-in; */
+opacity: 1;
+}
+100% {
+transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+opacity: 0;
+}
+} */
+nav{
+    display:flex ;
+    justify-content: center;
+    clear: both;
+}
+ul li{
+    display: inline;
+    list-style: none;
+    padding: 50px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+section{
+    grid-area: main;
+    background-color: #fff;
+    
+}
+section div{
+    margin: 10px;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.image{
+    height: 500px;
+    background-image: url('images/contact.jpg');
+    background-origin:center;
+    background-repeat: no-repeat; 
+}
+
+button{
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin: 10px;
+    outline: none;
+}
+footer{
+    grid-area: footer1;
+    background-color: rgb(27, 25, 25); 
+}
+footer div p{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+@media only screen and (max-width:600px) {
+   h1{
+       font-size: 35px;
+       text-align: center; 
+   }
+   .img{
+       display: none; 
+   }
+   button{
+       width: 100% !important;
+   }
+   .second{
+       display: block;
+       padding: 5px;
+   }
+   .first div{
+       margin: 20px;
+   }
+   h1{
+       text-align: right;
+   }
+   .third div{
+      margin: 30px; 
+      text-align: center;
+   }
+   .grid{
+       grid-template-rows:100px 1fr 1fr;
+       grid-template-areas: "second second"
+                            "third third"
+                            "first first";
+    }
+    .third{
+        display: grid;
+    }
+   .grid > div{
+    text-align: center;
+   }
+   
+}
